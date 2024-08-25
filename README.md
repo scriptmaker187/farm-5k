@@ -14,8 +14,16 @@ end
 -- Ausführung der Teleportation zu Dummy2
 teleportToDummy()
 
--- Schleife zum Senden von Daten an den Server
-while toggle_state do
+-- Starten der Schleife für den Schaden am Dummy
+local runService = game:GetService("RunService")
+local connection
+
+connection = runService.Heartbeat:Connect(function()
+    if not toggle_state then
+        connection:Disconnect()  -- Beendet die Schleife und damit das Skript
+        return
+    end
+
     -- Daten, die an den Server gesendet werden
     local args = {
         [1] = workspace.MAP:FindFirstChild("5k_dummies").Dummy2.Humanoid,
@@ -24,4 +32,4 @@ while toggle_state do
 
     -- Senden der Daten an den Server
     game:GetService("ReplicatedStorage").jdskhfsIIIllliiIIIdchgdIiIIIlIlIli:FireServer(unpack(args))
-end
+end)
