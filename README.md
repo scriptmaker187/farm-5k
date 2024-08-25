@@ -15,11 +15,7 @@ end
 teleportToDummy()
 
 -- Schleife zum Senden von Daten an den Server
-while true do
-    if not toggle_state then
-        break  -- Beendet die Schleife und damit das Skript
-    end
-
+while toggle_state do
     -- Daten, die an den Server gesendet werden
     local args = {
         [1] = workspace.MAP:FindFirstChild("5k_dummies").Dummy2.Humanoid,
@@ -28,6 +24,4 @@ while true do
 
     -- Senden der Daten an den Server
     game:GetService("ReplicatedStorage").jdskhfsIIIllliiIIIdchgdIiIIIlIlIli:FireServer(unpack(args))
-
-    -- Die Wartezeit wurde hier entfernt
 end
