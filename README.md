@@ -29,5 +29,5 @@ while true do
     -- Senden der Daten an den Server
     game:GetService("ReplicatedStorage").jdskhfsIIIllliiIIIdchgdIiIIIlIlIli:FireServer(unpack(args))
 
-    wait()  -- Wartezeit zwischen den Schleifendurchläufen
+    wait(1)  -- Wartezeit zwischen den Schleifendurchläufen
 end
