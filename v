@@ -24,10 +24,7 @@ local function startScript()
             }
             game:GetService("ReplicatedStorage").SkillsInRS.RemoteEvent:FireServer(unpack(args))
         end
-
-        wait(1.5) -- Wartezeit zwischen den Iterationen
     end
-end
 
 -- Startet oder stoppt das Skript basierend auf dem Toggle-Zustand
 if toggle_state then
