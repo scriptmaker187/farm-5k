@@ -1,32 +1,100 @@
-local function startScript()
-    -- Funktion zum Erzwingen des Resets
-    local function forceResetAction()
-        local player = game.Players.LocalPlayer
-        if player.Character and player.Character:FindFirstChild("Humanoid") then
-            player.Character.Humanoid.Health = 0
-        end
-    end
-
-    -- Schleife für das Skript
-    while toggle_state do
-        -- Aufruf der Reset-Funktion
-        forceResetAction()
-
-        -- Angriff auf den lokalen Spieler
-        local localPlayer = game:GetService("Players").LocalPlayer
-
-        if localPlayer.Character and localPlayer.Character:FindFirstChild("Humanoid") then
-            local args = {
-                [1] = "damage",
-                [2] = {
-                    ["EnemyHumanoid"] = localPlayer.Character.Humanoid
-                }
-            }
-            game:GetService("ReplicatedStorage").SkillsInRS.RemoteEvent:FireServer(unpack(args))
-        end
-    end
-
--- Startet oder stoppt das Skript basierend auf dem Toggle-Zustand
-if toggle_state then
-    coroutine.wrap(startScript)()
-end
+81416 MsLele
+35428 x00Yoyo_alt00x
+4117 Blox_2508WHITEHIVE
+108257 alfie37396
+35328 gamerin1254
+20144 xXLord_HuronXx
+159383 PatrickZenPro
+182941 0_xToxica
+88711 Guigui_1984
+104651 patrickedit
+50917 LC_Y2k
+35101 Marvy397
+61341 irohvzk
+241002 BLOX_2508RANK
+77340 mauricio_lokao
+153681 xXBig_LordXx7crx2024
+56068 IXIThe_BigLordIXIALT
+43418 The_BigLord0
+34442 Kaden_bozzz
+12596 niladri89
+63024 DDilayh
+24446 Dilaaaayh
+42065 Simon_simsl
+2533 GuardianOfPetals
+33015 Witchergamer27754
+14082 Jerry_YnY
+17759 XxYun_anX
+46299 44kxNaim33xX
+108343 ScooTzeraYT
+232315 AndreaDariaMaria
+94664 mitoblox03021
+16757 REBELDEluke
+41684 HisBlessing10_24
+149415 Milena_fabienne
+47819  chanelAmelie
+31160 IIIAR3AIII_Alt
+93648 XxxxAbraxasxxxX
+99633 XxxApheaxxX
+43998 Losttes_kind
+9012 PX_Teddyxalt3
+11609 GermanDragon666
+45214 dany2011wq10081
+5021 wxxqyq
+54130 XxBluebobax
+160871 XXDragon5555XX
+50040 Kart_Fox
+8093 KartFox_Alt
+222821 KartFox627
+10935 Foxy2006228
+22309 Kookie232281
+66628 ErrorOshi38
+24250 Iceninja2301
+56375 paschk17
+174580 KURD_Destroyer
+31384 KURD_HAHA
+78549 joojon36
+33204 coollmannnnnq2000
+23804 FartedHa
+91643 Yasihro_1
+34018 UwUPoLiNa2000
+49298 xXxDarkSammyxXx
+15612 BazookaSam_01
+154720 XxWhite_Angel01xX
+7833 M_uzzi2507
+34881 M_uzzi77
+274002 MHunter1997
+165865 MHunter_1997A1
+81410 MHunter_1997
+31799 YoungGottxalt2
+154190 PatrickLeBruh
+43353 Bosslengens14
+55009 LaraReal_2021
+106667 frutillita212223
+50772 MyF4v_Mi4
+34141 Galaxystern345
+41222 WOLFMOUBARAK
+245008 SkizyLJ
+242070 Xx_Mensa
+62989 Medy08250
+50121 Amys_Back
+50775 xIITooty_FruityIIx 
+48514 xIISneaky_PeekyIIx
+100661 Marla_altaa1
+107051 ScooTzeraYT
+102950 Black_Swan453
+40276 sosiska_test01
+41631 dragonlikefire99
+127924 vivHESOYM666
+57470 moha0974
+48490 Junger_Gottalt2
+66456 jjonnyy002
+42158 XuLiGaN38reg
+188874 Welcometo_TheHellxx
+35624 Ambravi2009
+26283 TrueKathi
+94020 B4h4m4Gold
+57203 Lucas253623
+165565 insxneHyra
+40606   Riccardo08i 
+9336 prosciuttosborra
